@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            width: 1000px;
+            margin: auto;
+            margin-top: 50px;
+            border: 2px solid black;
+            padding: 10px;
+            position: relative;
+            font-family: sans-serif;
+        }
+        
+        h1 {
+            display: block;
+            text-align: center;
+            background-color: rgb(233, 232, 231);
+            text-transform: uppercase;
+        }
+        
+        h1::before {
+            content: "SALE";
+            background-color: rgb(234, 70, 70);
+            color: white;
+            display: inline-block;
+            font-size: 16px;
+            padding: 5px 10px;
+            position: absolute;
+            top: -15px;
+            left: -30px;
+        }
+        
+        img {
+            width: 200px;
+        }
+        
+        ul {
+            margin-bottom: 40px;
+        }
+        
+        .a1:link,
+        .a1:visited {
+            color: black;
+        }
+        
+        .a1:hover,
+        .a1:active {
+            text-decoration: none;
+            background-color: azure;
+            color: blueviolet;
+        }
+        
+        button {
+            width: 100%;
+            padding-left: 10px;
+            padding-right: 10px;
+            padding-top: 5px;
+            padding-bottom: 5px;
+            background-color: black;
+            color: white;
+            position: absolute;
+            transform: translateY(-60%);
+            margin-left: -10px;
+            text-transform: uppercase;
+        }
+        
+        .btn:link,
+        .btn:visited {
+            color: azure;
+        }
+        
+        .btn:hover,
+        .btn:active {
+            background-color: white;
+            color: blue;
+            border: none;
+        }
+        
+        .colors {
+            margin-top: 18px;
+        }
+        
+        .color {
+            background-color: black;
+            width: 25px;
+            height: 25px;
+            display: inline-block;
+        }
+        
+        .color1 {
+            background-color: blue;
+        }
+        
+        .color2 {
+            background-color: red;
+        }
+        
+        .color3 {
+            background-color: yellow;
+        }
+        
+        .color4 {
+            background-color: green;
+        }
+        
+        .color5 {
+            background-color: brown;
+        }
+        
+        .f1 {
+            display: flex;
+            align-items: center;
+            margin-top: 10px;
+            justify-content: space-between;
+        }
+        
+        .art {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            row-gap: 40px;
+            column-gap: 20px;
+            align-items: center;
+        }
+        
+        header {
+            grid-column: 1/-1;
+        }
+        
+        .bt {
+            grid-column: 1/-3;
+        }
+        
+        .pd {
+            align-self: self-start;
+        }
+    </style>
+</head>
+
+<body>
+    <article class="art">
+        <header>
+            <h1>Converse Chuck Taylor All Star Low Top</h1>
+        </header>
+        <div class="ip">
+            <img src="/images/photo.jpeg" />
+        </div>
+        <div class="detail">
+            <div class="f1">
+                <p style="margin-right: 40px;"><strong>$65.00</strong></p>
+                <p>Free shiping</p>
+            </div>
+            <p>Ready to dress up or down,these classic canvas chuck are an everyday wardape staple</p>
+            <a href="#" class="a1">More Information &rarr;</a>
+            <div class="colors">
+                <div class="color"></div>
+                <div class="color color1"></div>
+                <div class="color color2"></div>
+                <div class="color color3"></div>
+                <div class="color color4"></div>
+                <div class="color color5"></div>
+            </div>
+        </div>
+        <div class="pd">
+            <h3 style="text-transform: uppercase;">Product Details</h3>
+            <ul>
+                <li>Light weight durable canavas sneaker</li>
+                <li>Lightly padded footbed for added comfort</li>
+                <li>Iconic chuck taylor ankle patch</li>
+            </ul>
+        </div>
+        <div class="bt">
+            <button class="btn">Add to Cart</button>
+        </div>
+    </article>
+</body>
+
+</html>
